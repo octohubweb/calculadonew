@@ -28,12 +28,13 @@
         try {
             await OneSignal.init({
               appId: "de38b549-a77c-4292-9bb4-31efc0fa5ecc",
-              serviceWorkerParam: { scope: '/' },
+              /* --- AQUI ESTÁ A MUDANÇA IMPORTANTE --- */
+              serviceWorkerParam: { scope: '/calculadonew/' }, // Define a pasta do GitHub Pages
               serviceWorkerPath: 'service-worker.js',
               allowLocalhostAsSecureOrigin: true,
             });
         } catch (e) {
-            console.warn("OneSignal: Notificações inativas neste domínio. Elas funcionarão em https://octohubweb.github.io");
+            console.warn("OneSignal: Notificações inativas neste domínio.");
         }
       });
     </script>

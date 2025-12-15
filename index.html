@@ -18,10 +18,10 @@
     <link rel="apple-touch-icon" href="icon-192.png">
 
     <!-- FAVICON -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22[http://www.w3.org/2000/svg%22](http://www.w3.org/2000/svg%22) viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>❄️</text></svg>">
 
     <!-- ONESIGNAL SDK -->
-    <script src="[https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js](https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js)" defer></script>
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
       window.OneSignalDeferred = window.OneSignalDeferred || [];
       OneSignalDeferred.push(async function(OneSignal) {
@@ -29,9 +29,7 @@
             await OneSignal.init({
               appId: "de38b549-a77c-4292-9bb4-31efc0fa5ecc",
               /* CONFIGURAÇÃO ESPECIAL PARA SUBDIRETÓRIO /calculadonew/ */
-              // O scope define que o app roda nesta pasta específica
               serviceWorkerParam: { scope: '/calculadonew/' }, 
-              // O path usa ./ para pegar o arquivo na mesma pasta onde está o index.html
               serviceWorkerPath: './service-worker.js', 
               allowLocalhostAsSecureOrigin: true,
             });
@@ -41,11 +39,11 @@
       });
     </script>
 
-    <!-- LIBRARIES -->
-    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-    <script src="[https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js](https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js)"></script>
-    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap)" rel="stylesheet">
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    <!-- LIBRARIES (Links Corrigidos) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         body { 
@@ -110,7 +108,7 @@
                     <div id="input-section" class="space-y-5">
                         
                         <!-- BOTÃO AFILIADO -->
-                        <a href="[https://mercadolivre.com/sec/1bpYUnD](https://mercadolivre.com/sec/1bpYUnD)" target="_blank" class="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all transform active:scale-[0.98] group relative overflow-hidden border border-blue-500/30">
+                        <a href="https://mercadolivre.com/sec/1bpYUnD" target="_blank" class="block w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white font-bold text-xs py-3 rounded-xl shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2 hover:from-blue-700 hover:to-blue-800 transition-all transform active:scale-[0.98] group relative overflow-hidden border border-blue-500/30">
                             <div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             <i class="fa-solid fa-gift text-yellow-300 text-sm group-hover:animate-bounce"></i>
                             <span class="tracking-wide">OFERTAS DA SEMANA</span>
